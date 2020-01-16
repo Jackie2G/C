@@ -84,7 +84,7 @@ void wypelnij_plansze(SDL_Renderer *renderer, const int *plansza,
 void gra_w_toku(SDL_Renderer *renderer, const informacje *gra){
 	  stworz_plansze(renderer, &KOLOR_PLANSZY);
 		wypelnij_plansze(renderer, gra -> plansza,
-										 &KOLOR_GRACZ_X, &KOLOR_GRACZ_X);
+										 &KOLOR_GRACZ_X, &KOLOR_GRACZ_O);
 }
 
 //funkcja wykona sie w przypadku konca gry

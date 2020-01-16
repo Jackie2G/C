@@ -50,13 +50,17 @@ int main(int argc, char *argv[]){
 	/* tworzymy petle gry, jezeli natrafimy na SDL_QUIT niszczymy okno oraz wychodzimy z gry
 	w przypadku wcisniecia przycisku myszy wywolujemy funkcje nacisnij_pole */
 	while (gra.status != WYJSCIE){
+		// printf("w while");
 		while (SDL_PollEvent(&e)){
+			// printf("w while");
 			switch (e.type){
 			case SDL_QUIT:
 				gra.status = WYJSCIE;
 				break;
 			case SDL_MOUSEBUTTONDOWN:
-				nacisnij_pole(&gra, e.button.y / WYSOKOSC, e.button.x / SZEROKOSC);
+				// printf("myszka");
+				// printf("%f", e.button.y / WYSOKOSC_KOMORKI);
+				nacisnij_pole(&gra, e.button.y / WYSOKOSC_KOMORKI, e.button.x / SZEROKOSC_KOMORKI);
 				break;
 			default: {}
 			}

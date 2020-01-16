@@ -1,4 +1,5 @@
 //dodajemy headery
+#include <stdio.h>
 #include "./status_gry.h"
 #include "./funkcjonalnosc.h"
 
@@ -21,11 +22,11 @@ int kto_wygral(informacje *gra, int gracz){
   int licznik_przekatna1 = 0;
   int licznik_przekatna2 = 0;
   for (int i = 0; i < N; ++i){
-    for (int j = 0; j < N; ++i){
+    for (int j = 0; j < N; ++j){
       if (gra -> plansza[i * N + j] == gracz){
         licznik_wierszy++;
       }
-      if (gra -> plansza[j * N  + i == gracz]){
+      if (gra -> plansza[j * N  + i] == gracz){
         licznik_kolumn++;
       }
     }
@@ -89,9 +90,11 @@ void resetuj(informacje *gra){
 
 //funkcja ktora bedzie sie wywolywac kiedy nacisniemy myszka na wybrane pole
 void nacisnij_pole(informacje *gra, int wiersz, int kolumna){
-  if (gra -> status == GRA_TRWA){
-    tura_gracza(gra, wiersz, kolumna);
-  }
+  // printf("%d", gra->status);
+  if (gra->status == GRA_TRWA){
+    printf("weszlo");
+     tura_gracza(gra, wiersz, kolumna);
+   }
   else{
     resetuj(gra);
   }

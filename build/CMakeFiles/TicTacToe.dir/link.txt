@@ -1,1 +1,0 @@
-/usr/bin/cc  -O0 -Wall -Werror -fdump-rtl-expand   CMakeFiles/TicTacToe.dir/main.c.o CMakeFiles/TicTacToe.dir/tworzenie_gry.c.o CMakeFiles/TicTacToe.dir/funkcjonalnosc.c.o  -o TicTacToe -lSDL2 -lSDL2_gfx -lSDL2 
