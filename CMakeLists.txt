@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.0)
 #ustawiamy minimalna wersje programu cmake
 
 project(TicTacToe)
@@ -32,6 +32,6 @@ set(HEADERS
 
 
 #dodajemy plik wykonywalny TicTacToe ktory stworzy sie na postawie dodanych plikow
-add_executable(TicTacToe1 ${SRCS} ${HEADERS})
+add_executable(TicTacToe ${SRCS} ${HEADERS})
 #linkujemy potrzebne biblioteki z ktorych korzystamy
-target_link_libraries(TicTacToe1 ${SDL2_LIBRARIES} ${SDL2_GFX_LIBRARIES})
+target_link_libraries(TicTacToe ${SDL2_LIBRARIES} ${SDL2_GFX_LIBRARIES})

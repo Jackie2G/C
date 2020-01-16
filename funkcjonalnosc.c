@@ -90,9 +90,7 @@ void resetuj(informacje *gra){
 
 //funkcja ktora bedzie sie wywolywac kiedy nacisniemy myszka na wybrane pole
 void nacisnij_pole(informacje *gra, int wiersz, int kolumna){
-  // printf("%d", gra->status);
   if (gra->status == GRA_TRWA){
-    printf("weszlo");
      tura_gracza(gra, wiersz, kolumna);
    }
   else{
