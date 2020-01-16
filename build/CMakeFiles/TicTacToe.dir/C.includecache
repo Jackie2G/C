@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jackie2g/Desktop/tictactoe/./funkcjonalnosc.h
+
+/home/jackie2g/Desktop/tictactoe/./status_gry.h
+
+/home/jackie2g/Desktop/tictactoe/./tworzenie_gry.h
+
+/home/jackie2g/Desktop/tictactoe/funkcjonalnosc.c
+./status_gry.h
+/home/jackie2g/Desktop/tictactoe/./status_gry.h
+./funkcjonalnosc.h
+/home/jackie2g/Desktop/tictactoe/./funkcjonalnosc.h
+
+/home/jackie2g/Desktop/tictactoe/main.c
+stdio.h
+-
+stdlib.h
+-
+SDL2/SDL.h
+-
+./status_gry.h
+/home/jackie2g/Desktop/tictactoe/./status_gry.h
+./funkcjonalnosc.h
+/home/jackie2g/Desktop/tictactoe/./funkcjonalnosc.h
+./tworzenie_gry.h
+/home/jackie2g/Desktop/tictactoe/./tworzenie_gry.h
+
+/home/jackie2g/Desktop/tictactoe/tworzenie_gry.c
+math.h
+-
+SDL2/SDL.h
+-
+SDL2/SDL2_gfxPrimitives.h
+-
+./status_gry.h
+/home/jackie2g/Desktop/tictactoe/./status_gry.h
+./tworzenie_gry.h
+/home/jackie2g/Desktop/tictactoe/./tworzenie_gry.h
+
